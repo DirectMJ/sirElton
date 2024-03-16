@@ -1,0 +1,39 @@
+<div class="registration-container">
+    <h2>Registration</h2>
+    <form (ngSubmit)="register()">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" required>
+      </div>
+      <div>
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" [(ngModel)]="middleName">
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required>
+      </div>
+      <div>
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber" [(ngModel)]="contactNumber" required>
+      </div>
+      <div>
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" [(ngModel)]="emailAddress" required>
+      </div>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
